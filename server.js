@@ -5,7 +5,7 @@ const cors = require('cors')
 const app = express()
 const path = require('path')
 const httpServer = createServer(app)
-const io = new Server(httpServer, { cors: { origin: 'http://localhost:3000 '}})
+const io = new Server(httpServer, { cors: { origin: 'https://tyreecks-chatapp.herokuapp.com'}})
 const PORT = process.env.PORT || 3001
 
 // render static files from build
