@@ -9,7 +9,7 @@ const io = new Server(httpServer, { cors: { origin: 'http://localhost:3000 '}})
 const PORT = process.env.PORT || 3001
 
 // render static files from build
-app.use(express.static(path.join(__dirname, 'frontend/build')))
+app.use(express.static(path.join(__dirname, 'client/build')))
 
 io.on("connection", (socket) => {
     console.log('user connected', socket.id)
